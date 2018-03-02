@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<launch>
+  <node pkg="teleop" type="teleop" name="teleop"  output="screen">
+    <param name="scale_linear" value="0.5" type="double"/>
+    <param name="scale_angular" value="1.5" type="double"/>
+    <!-- turtlebot control
+    <remap from="teleop/cmd_vel" to="cmd_vel_mux/input/teleop"/>
+    -->
+    <remap from="teleop/cmd_vel" to="cmd_vel"/>
+  </node>
+</launch>
