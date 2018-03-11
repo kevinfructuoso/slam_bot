@@ -13,3 +13,6 @@ git clone project
 
 rosdep install -i rtabmap_ros
 rosdep install -i slam_bot
+
+cd catkin_ws/src/slam_bot/launch
+./rtab_run
