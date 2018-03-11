@@ -16,3 +16,5 @@ rosdep install -i slam_bot
 
 cd catkin_ws/src/slam_bot/launch
 ./rtab_run
+
+Begin SLAM-ing!
