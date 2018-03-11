@@ -54,11 +54,11 @@
       </camera>
       <plugin name="camera_controller" filename="libgazebo_ros_openni_kinect.so">
         <alwaysOn>true</alwaysOn>
-        <updateRate>10.0</updateRate>
-        <cameraName>head_ir</cameraName>
-        <imageTopicName>/head_ir/depth/image_raw</imageTopicName>
+            <updateRate>10.0</updateRate>
+            <cameraName>head_ir</cameraName>
+            <frameName>camera</frameName>
+        <imageTopicName>/head_ir/rgb/image_raw</imageTopicName>
         <cameraInfoTopicName>/head_ir/depth/camera_info</cameraInfoTopicName>
-        <frameName>camera_rgbd_frame</frameName>
         <depthImageTopicName>/head_ir/depth/image_raw</depthImageTopicName>
         <pointCloudTopicName>/head_ir/depth/points</pointCloudTopicName>
         <depthImageInfoTopicName>/head_ir/depth/camera_info</depthImageInfoTopicName>
@@ -110,7 +110,7 @@
         </noise>
       </ray>
       <plugin name="gazebo_ros_head_hokuyo_controller" filename="libgazebo_ros_laser.so">
-        <topicName>/slam_bot/laser/scan</topicName>
+        <topicName>/scan</topicName>
         <frameName>hokuyo</frameName>
       </plugin>
     </sensor>
