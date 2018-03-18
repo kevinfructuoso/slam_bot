@@ -58,7 +58,7 @@
             <cameraName>head_ir</cameraName>
             <frameName>camera</frameName>
         <imageTopicName>/head_ir/rgb/image_raw</imageTopicName>
-        <cameraInfoTopicName>/head_ir/depth/camera_info</cameraInfoTopicName>
+        <cameraInfoTopicName>/head_ir/rgb/camera_info</cameraInfoTopicName>
         <depthImageTopicName>/head_ir/depth/image_raw</depthImageTopicName>
         <pointCloudTopicName>/head_ir/depth/points</pointCloudTopicName>
         <depthImageInfoTopicName>/head_ir/depth/camera_info</depthImageInfoTopicName>
