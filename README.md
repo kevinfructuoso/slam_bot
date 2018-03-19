@@ -17,6 +17,9 @@ rosdep install -i slam_bot
 
 follow steps for rtabmap_ros install from source - [link|https://github.com/introlab/rtabmap_ros#build-from-source]
 
+curl -L https://s3-us-west-1.amazonaws.com/udacity-robotics/Term+2+Resources/P3+Resources/models.tar.gz | tar zx -C ~/.gazebo/
+
+
 cd catkin_ws/src/slam_bot/launch
 ./rtab_run
 

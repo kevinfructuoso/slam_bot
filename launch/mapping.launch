@@ -5,7 +5,7 @@
   <arg name="database_path"     default="rtabmap.db"/>
   <arg name="rgb_topic"   default="/head_ir/rgb/image_raw"/>
   <arg name="depth_topic" default="/head_ir/depth/image_raw"/>
-  <arg name="camera_info_topic" default="/head_ir/depth/camera_info"/>  
+  <arg name="camera_info_topic" default="/head_ir/rgb/camera_info"/>  
 
 
   <!-- Mapping Node -->
@@ -35,8 +35,11 @@
       <param name="Reg/Force3DoF" type="string" value="true"/>      
 
       <!-- Loop Closure Detection -->
- <!-- 0=SURF 1=SIFT 2=ORB 3=FAST/FREAK 4=FAST/BRIEF 5=GFTT/FREAK 6=GFTT/BRIEF 7=BRISK 8=GFTT/ORB 9=KAZE
-<param name="Kp/DetectorStrategy" type="string" value="0"/> -->
+ <!-- 0=SURF 1=SIFT 2=ORB 3=FAST/FREAK 4=FAST/BRIEF 5=GFTT/FREAK 6=GFTT/BRIEF 7=BRISK 8=GFTT/ORB 9=KAZE -->
+      <param name="Kp/DetectorStrategy" type="string" value="0"/>
+
+      <!-- <param name="Grid/3D" type="string" value="true"/>
+      <param name="Grid/FromDepth" type="string" value="false"/> -->
 
 <!-- Maximum visual words per image (bag-of-words) -->
           <param name="Kp/MaxFeatures" type="string" value="400"/>  

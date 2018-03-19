@@ -22,7 +22,7 @@
 
   <node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model" respawn="false" output = "screen" args="-urdf -param robot_description -model my_bot"/>
 
-  <!-- launch rviz 
-  <node name="rviz" pkg="rviz" type="rviz" respawn="false" args="-d $(find slam_bot)/launch/config/robot_slam.rviz"/> -->
+  <!-- launch rviz -->
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find slam_bot)/config/robot_slam.rviz"/>
 
 </launch>
