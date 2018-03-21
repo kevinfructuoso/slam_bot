@@ -12,4 +12,7 @@
     <!-- Send robot states to tf -->
       <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" respawn="false" output="screen"/>
 
+    <!-- rotate RGBD camera to orient point cloud -->
+    <node pkg="tf" type="static_transform_publisher" name="camera_rotate_tf" args="0.15 0 0.3 -1.58 0 -1.58 robot_footprint camera 100"/>
+
 </launch>
