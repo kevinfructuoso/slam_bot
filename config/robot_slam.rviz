@@ -6,6 +6,8 @@ Panels:
       Expanded:
         - /Global Options1
         - /Status1
+        - /MapCloud1
+        - /MapCloud1/Status1
       Splitter Ratio: 0.5
     Tree Height: 249
   - Class: rviz/Selection
@@ -107,6 +109,7 @@ Visualization Manager:
         Grid: true
         LaserScan: true
         Map: true
+        MapCloud: true
         PointCloud2: true
         RobotModel: true
         Value: true
@@ -163,7 +166,7 @@ Visualization Manager:
       Color: 255; 255; 255
       Color Transformer: RGB8
       Decay Time: 0
-      Enabled: true
+      Enabled: false
       Invert Rainbow: false
       Max Color: 255; 255; 255
       Max Intensity: 4096
@@ -177,6 +180,43 @@ Visualization Manager:
       Size (m): 0.00999999978
       Style: Flat Squares
       Topic: /head_ir/depth/points
+      Unreliable: false
+      Use Fixed Frame: true
+      Use rainbow: true
+      Value: false
+    - Alpha: 1
+      Autocompute Intensity Bounds: true
+      Autocompute Value Bounds:
+        Max Value: 10
+        Min Value: -10
+        Value: true
+      Axis: Z
+      Channel Name: intensity
+      Class: rtabmap_ros/MapCloud
+      Cloud decimation: 4
+      Cloud max depth (m): 4
+      Cloud min depth (m): 0
+      Cloud voxel size (m): 0.00999999978
+      Color: 255; 255; 255
+      Color Transformer: RGB8
+      Download graph: false
+      Download map: false
+      Enabled: true
+      Filter ceiling (m): 0
+      Filter floor (m): 0
+      Invert Rainbow: false
+      Max Color: 255; 255; 255
+      Max Intensity: 4096
+      Min Color: 0; 0; 0
+      Min Intensity: 0
+      Name: MapCloud
+      Node filtering angle (degrees): 30
+      Node filtering radius (m): 0
+      Position Transformer: XYZ
+      Size (Pixels): 5
+      Size (m): 0.00999999978
+      Style: Points
+      Topic: /rtabmap/mapData
       Unreliable: false
       Use Fixed Frame: true
       Use rainbow: true
@@ -244,5 +284,5 @@ Window Geometry:
   Views:
     collapsed: false
   Width: 1600
-  X: -2
-  Y: -52
+  X: -3
+  Y: -78
